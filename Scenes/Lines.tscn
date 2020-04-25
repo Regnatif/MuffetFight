@@ -1,0 +1,36 @@
+[gd_scene format=2]
+
+[node name="Lines" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Line1" type="ColorRect" parent="."]
+margin_top = 68.0
+margin_right = 602.0
+margin_bottom = 76.0
+color = Color( 0.784314, 0, 0.972549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2" type="ColorRect" parent="."]
+margin_top = 201.0
+margin_right = 602.0
+margin_bottom = 209.0
+color = Color( 0.784314, 0, 0.972549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line3" type="ColorRect" parent="."]
+margin_top = 334.0
+margin_right = 602.0
+margin_bottom = 342.0
+color = Color( 0.784314, 0, 0.972549, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Lines.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Heart.tscn" type="PackedScene" id=2]
+
+[node name="GameScene" type="Node2D"]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Lines" parent="." instance=ExtResource( 1 )]
+show_behind_parent = true
+
+[node name="Heart" parent="." instance=ExtResource( 2 )]
+position = Vector2( 281.062, 204.239 )
