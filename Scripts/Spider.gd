@@ -30,7 +30,7 @@ func _process(delta):
 		position.x += 450 * delta
 	else:
 		position.x -= 450 * delta
-	modulate = hsv_to_rgb(time,1,1,1)
+	#modulate = hsv_to_rgb(time * 2,1,1,1)
 	pass
 
 func hsv_to_rgb(h, s, v, a = 1):
