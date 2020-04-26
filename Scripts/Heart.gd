@@ -19,4 +19,10 @@ func _process(delta):
 	if Input.is_action_just_pressed("down") && position.y < 133 * 2:
 		toLerp = position.y + 133
 	position.y = lerp(position.y,toLerp,0.01)
+	
+	if Input.is_action_pressed("left"):
+		position.x -= 270*delta
+	
+	if Input.is_action_pressed("right"):
+		position.x += 270*delta
 	pass

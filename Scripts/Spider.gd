@@ -27,9 +27,9 @@ var time : float
 func _process(delta):
 	time += delta
 	if b == 1:
-		position.x += 400 * delta
+		position.x += 450 * delta
 	else:
-		position.x -= 400 * delta
+		position.x -= 450 * delta
 	modulate = hsv_to_rgb(time,1,1,1)
 	pass
 
