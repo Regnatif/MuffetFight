@@ -4,16 +4,19 @@ extends Area2D
 # var a = 2
 # var b = "text"
 
+var toLerp : float
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
+	toLerp = position.y
 	pass 
 	
 
-
-
 func _process(delta):
-	if Input.is_action_just_pressed("up"):
-		position.y -= 133
+	if Input.is_action_just_pressed("up") && position.y > 133:
+		toLerp = position.y - 133
+	
+	if Input.is_action_just_pressed("down") && position.y < 133 * 2:
+		toLerp = position.y + 133
+	position.y = lerp(position.y,toLerp,0.01)
 	pass
