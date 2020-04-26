@@ -5,14 +5,21 @@ extends Area2D
 # var b = "text"
 
 var toLerp : float
+var blinking = false
+var alphadown = true
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	toLerp = position.y
 	pass 
 	
 
 func _process(delta):
+	if blinking:
+		modulate.a -= 0.05
+		if modulate.a <= 0:
+			modulate.a += 0.05
+		if modulate.a >=1:
+			blinking = false
 	if Input.is_action_just_pressed("up") && position.y > 133:
 		toLerp = position.y - 133
 	
@@ -26,3 +33,9 @@ func _process(delta):
 	if Input.is_action_pressed("right"):
 		position.x += 270*delta
 	pass
+
+func _on_Heart_area_entered(area : Area2D):
+	if area.is_in_group("Spider"):
+		blinking = true
+		area.queue_free()
+	pass 

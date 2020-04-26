@@ -6,7 +6,9 @@
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 38.243, 37.5083 )
 
-[node name="Spider" type="Area2D"]
+[node name="Spider" type="Area2D" groups=[
+"Spider",
+]]
 position = Vector2( 296.479, 191.408 )
 script = ExtResource( 2 )
 __meta__ = {
