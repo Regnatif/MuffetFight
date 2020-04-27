@@ -10,16 +10,16 @@ func _ready():
 	b = randi()%2+1
 
 	if a == 1:
-		position.y = 133- 75
+		position.y = 133 - 75
 	if a == 2:
 		position.y = 266- 75
 	if a == 3:
 		position.y = 399- 75
 	
 	if b == 1:
-		position.x = 0
+		position.x = 0 - 100
 	if b == 2:
-		position.x = 600
+		position.x = 600 + 150
 	pass 
 
 var time : float

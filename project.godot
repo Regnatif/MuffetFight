@@ -20,13 +20,17 @@ run/main_scene="res://Scenes/GameScene.tscn"
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://Sprites/heart.png"
 
+[autoload]
+
+Vars="*res://Scripts/Vars.gd"
+
 [display]
 
-window/size/width=600
-window/size/height=400
+window/size/width=750
+window/size/height=550
 window/size/resizable=false
-window/size/test_width=600
-window/size/test_height=400
+window/size/test_width=750
+window/size/test_height=550
 window/vsync/use_vsync=false
 
 [input]

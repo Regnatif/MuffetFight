@@ -8,8 +8,7 @@ var toLerp : float
 var blink = 0
 var alphadown = true
 var kat : int = 2
-var maxhealth = 20
-var currenthealth = 20
+
 
 func _ready():
 	toLerp = position.y
@@ -34,15 +33,15 @@ func _process(delta):
 		position.x += 270 * delta
 	pass
 	
-	if position.x <= 0 + 30:
-		position.x = 0 + 30
+	if position.x <= 0 + 30 +50:
+		position.x = 0 + 30 + 50
 	
-	if position.x >= 600 - 30:
-		position.x = 600- 30
+	if position.x >= 600 - 30 + 50 +27:
+		position.x = 600- 30 + 50 +27
 	
 func _on_Heart_area_entered(area : Area2D):
 	if area.is_in_group("Spider"):
-		currenthealth -= 6
+		Vars.currenthealth -= 6
 		blink = 10
 		modulate.a = 0
 		$Timer.start()
