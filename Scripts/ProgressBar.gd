@@ -5,12 +5,10 @@ const player = preload("res://Scenes/Heart.tscn")
 
 
 func _ready():
-	var maxplayerhealth = player.instance().maxhealth
-	max_value = maxplayerhealth
+	max_value = get_tree().root.get_node("GameScene").get_node("Heart").maxhealth
 	pass 
 
 func _process(delta):
-	var curplayerhealth = player.instance().currenthealth
-	print(curplayerhealth)
+	value = get_tree().root.get_node("GameScene").get_node("Heart").currenthealth
 	pass
 
