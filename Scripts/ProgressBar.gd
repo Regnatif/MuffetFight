@@ -9,14 +9,8 @@ func _ready():
 	max_value = maxplayerhealth
 	pass 
 
-
-
 func _process(delta):
-	print(value)
+	var curplayerhealth = player.instance().currenthealth
+	print(curplayerhealth)
 	pass
 
-
-func _on_ProgressBar_value_changed(value):
-	var curplayerhealth = player.instance()
-	value = curplayerhealth.currenthealth
-	pass 

@@ -32,7 +32,6 @@ func _process(delta):
 	
 	if Input.is_action_pressed("right"):
 		position.x += 270 * delta
-	
 	pass
 
 func _on_Heart_area_entered(area : Area2D):
