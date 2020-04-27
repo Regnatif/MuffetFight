@@ -16,7 +16,7 @@ func _ready():
 	pass 
 
 func _process(delta):
-
+	
 	if Input.is_action_just_pressed("up") && kat < 3:
 		kat += 1
 		toLerp = (3 - kat) * 133 + 70
@@ -33,7 +33,13 @@ func _process(delta):
 	if Input.is_action_pressed("right"):
 		position.x += 270 * delta
 	pass
-
+	
+	if position.x <= 0 + 30:
+		position.x = 0 + 30
+	
+	if position.x >= 600 - 30:
+		position.x = 600- 30
+	
 func _on_Heart_area_entered(area : Area2D):
 	if area.is_in_group("Spider"):
 		currenthealth -= 6

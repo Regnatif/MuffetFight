@@ -7,7 +7,7 @@
 extents = Vector2( 27.7944, 24.9866 )
 
 [node name="Heart" type="Area2D"]
-position = Vector2( -0.593079, 21.8491 )
+position = Vector2( -1.40759, 21.8491 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
